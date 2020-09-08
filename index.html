@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyLibraryApp</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h1>MyLibraryApp</h1>
+    </div>
+    <div class="body">
+        <div class="body-container">
+            <div class="form">
+                <form action="" id="book-form">
+                    <value for="title">Title</value>
+                    <input type="text" id="title">
+                    <value for="author">Author</value>
+                    <input type="text" id="author">
+                    <value for="pages">Pages</value>
+                    <input type="text" id="pages">
+                    <value for="read">Have you read it?</value>
+                    <select name="read" id="read">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                    <input type="submit" value="Add Book">
+                </form>
+            </div>
+            <div class="table">
+                <table>
+                    <thead>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Pages</th>
+                        <th>Read</th>
+                        <th></th>
+                    </thead>
+                    <tbody id="book-list">
+                        <tr>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <h3>By @icepick-pauly for The Odin Project, 2020</h3>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

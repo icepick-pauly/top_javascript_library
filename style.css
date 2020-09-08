@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Lora', serif;
+    min-height: 100vh;
+    color: #fff;
+}
+
+.header {
+    height: 10vh;
+    background-color: #6AB845;
+}
+
+.header h1 {
+    width: 300px;
+    margin: auto;
+    margin-top: 6px;
+}
+
+.body {
+    height: 80vh;
+    background-color: #222;
+}
+
+.body-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 90vw;
+    margin: auto;
+    margin-top: 20px;
+}
+
+input[type=text], select, input[type=submit] {
+    width: 100%;
+    display: inline-block;
+    border: none;
+    padding: 8px 0;
+    border-radius: 5px;
+}
+
+input[type=submit] {
+    margin-top: 16px;
+    background-color: #6AB845;
+    color: #fff;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+    background-color: #3b801b;
+}
+
+.table {
+    margin-left: 24px;
+}
+
+.table th {
+    text-align: left;
+}
+
+.table th, td {
+    padding: 0 12px;
+}
+
+.table a {
+    color: #fff;
+    text-decoration: none;
+    background-color: #6AB845;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+
+.footer {
+    height: 10vh;
+    background-color: #6AB845;
+}
+
+.footer h3 {
+    width: 400px; 
+    margin: auto;
+    margin-top: 16px;
+}
+
+@media screen and (max-width: 1080px) {
+    .body-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .table {
+        margin-top: 24px;
+        margin-left: 0px;
+    }
+}
